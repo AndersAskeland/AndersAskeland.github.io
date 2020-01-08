@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Imports font from online to use - In this case from google -->
+<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <!-- Define style already here -->
 <style media="screen">
   h1 {
@@ -15,11 +17,29 @@
   font-size: 13px;
 }
 
-/* Define sans-serif string as sans-srif font */
-.sans-serif{
-  font-family: sans-serif;
+/* Define Lobster string as lato font and degrade to monospace if lato is not avaliable*/
+.lobster{
+  font-family: "Lato", monospace;
+}
+
+/* Set size of image*/
+.larger-image {
+   width: 800px;
+ }
+
+ /* Defines a border */
+.thin-red-border {
+  border-color: magenta;
+  border-width: 5px;
+  border-style: solid;
 }
 </style>
+
+
+
+
+
+
 
 <html lang="en">
 
@@ -33,8 +53,8 @@
 
 <!--Content of page within body tag-->
 <body>
-<!--h1 and h2 are headings-->
-<h1> Chewie's secret homepage</h1>
+<!--h1 and h2 are headings and class=lobster sets font as lobster-->
+<h1 class="lobster"> Chewie's secret homepage</h1>
 
 <!--I am here styling "I am chewie" inline with the colour blue -->
 <h2 style="color: blue;">I am chewie</h2>
@@ -48,7 +68,7 @@
   <p> I also like to play with Åke
   </p>
   <!-- This is insertion of images-->
-  <img src="./chewie_at_sea_01.jpg" width="350" alt="Chewie at sea" />
+  <img src="./chewie_at_sea_01.jpg" class="larger-image thin-red-border" alt="Chewie at sea" />
   <p>
 <div>
     <p>Things Chewie love:</p>
