@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- Imports font from online to use - In this case from google -->
 <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
 <!-- Define style already here -->
 <style media="screen">
   h1 {
@@ -32,6 +34,25 @@
   border-color: magenta;
   border-width: 5px;
   border-style: solid;
+  border-radius: 50% /*one can also use px*/;
+}
+
+.silver-background{
+  background-color: silver;
+}
+
+/* Defines a thing based on the ID (#)*/
+#some_text {
+  background-color: green;
+}
+
+/* Defines the margins (space around) for the ratio buttons (checkboxes)*/
+[type="checkbox"]{
+  margin: 20px 1px 20px 0px;
+}
+
+body{
+  background-color: yellow;
 }
 </style>
 
@@ -56,8 +77,8 @@
 <!--h1 and h2 are headings and class=lobster sets font as lobster-->
 <h1 class="lobster"> Chewie's secret homepage</h1>
 
-<!--I am here styling "I am chewie" inline with the colour blue -->
-<h2 style="color: blue;">I am chewie</h2>
+<!--I am here styling "I am chewie" inline with the colour blue - Giving stuff IDs helps when you want to refeer to it in JavaScript -->
+<h2 style="color: blue;" id = "Heading">I am chewie</h2>
 <!--main is the the main text area - I dont know the precise significance of this yet -->
 <main>
   <!-- p are simple paragraphs -->
@@ -65,12 +86,12 @@
     I like to eat.</p>
 
 
-  <p> I also like to play with Åke
+  <p id= "some_text"> I also like to play with Åke
   </p>
   <!-- This is insertion of images-->
   <img src="./chewie_at_sea_01.jpg" class="larger-image thin-red-border" alt="Chewie at sea" />
   <p>
-<div>
+<div class="silver-background">
     <p>Things Chewie love:</p>
     <!-- This is a basic/unordered list -->
     <ul>
@@ -93,7 +114,7 @@
     <a href="#footer">Jump to the bottom of the sea</a>
   </p>
 
-  <form action="/submit-cat-photo">
+  <form id="form" action="/submit-cat-photo">
     <input type="text" required placeholder="Stuff for Chewie" value="text">
     <button type="submit">Send to Chewie</button>
     <p><label for="indoor">
