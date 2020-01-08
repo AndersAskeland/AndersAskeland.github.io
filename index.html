@@ -5,6 +5,12 @@
 
 <!-- Define style already here -->
 <style media="screen">
+
+/* Define root variables that works on whole page - Can use to define more styles (i.e. all lines are one color)*/
+:root {
+  --thin-red-border: white;
+}
+
   h1 {
     color: red;
   }
@@ -31,14 +37,16 @@
 
  /* Defines a border */
 .thin-red-border {
-  border-color: magenta;
+  border-color: var(--thin-red-border);
   border-width: 5px;
   border-style: solid;
   border-radius: 50% /*one can also use px*/;
 }
 
 .silver-background{
+  --test-color: pink;
   background-color: silver;
+
 }
 
 /* Defines a thing based on the ID (#)*/
@@ -51,8 +59,9 @@
   margin: 20px 1px 20px 0px;
 }
 
+/* Gives the entire background a color */
 body{
-  background-color: yellow;
+  background-color: rgb(137,207,240);
 }
 </style>
 
