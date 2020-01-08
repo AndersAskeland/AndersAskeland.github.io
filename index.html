@@ -21,9 +21,8 @@
   <p> I also like to play with Åke
   </p>
   <!-- This is insertion of images-->
-  <img src=./chewie_at_sea_01.jpg width="350" alt="Chewie at sea" />
+  <img src="./chewie_at_sea_01.jpg" width="350" alt="Chewie at sea" />
   <p>
-
     <p>Things Chewie love:</p>
     <!-- This is a basic/unordered list -->
     <ul>
@@ -49,26 +48,27 @@
     <input type="text" required placeholder="Stuff for Chewie">
     <button type="submit">Send to Chewie</button>
     <p><label for="indoor">
-        <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
       </label>
-
       <label for="outdoor">
-        <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
       </label></p>
     <label for="loving">
-      <input id="personality" type="checkbox" name="loving"> Loving
+      <input id="loving" type="checkbox" name="personality" value="loving" checked> Loving
     </label>
-    <label for="biting">
-      <input id="personality" type="checkbox" name="biting"> Biting
+    <label for="energetic">
+      <input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic
     </label>
-    <label for="chewie">
-      <input id=personality" type="checkbox" name="chewie"> Chewie
+    <label for="lazy">
+      <input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy
     </label>
   </form>
 
   <p>View more <a href="freecodecamp.org"> Chewie photos</a>
   </p>
-  </p>
   <footer id="footer">
     This it the last of Chewie
   </footer>
+</main>
+
+</html>
