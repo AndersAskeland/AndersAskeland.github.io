@@ -66,9 +66,34 @@
     <a href="#footer">Jump to the bottom of the sea</a>
   </p>
 
-  <form name="simple_form" method="POST" data-netlify="true" id="form" action="/submit-cat-photo">
-    <input type="text" required placeholder="Stuff for Chewie" value="text">
+  <form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+
+  <form name="sent_stuff_to_chewie" method="POST" data-netlify="true" id="form" action="/submit-cat-photo">
+    <input type="text" required placeholder="Stuff for Chewie">
     <button type="submit">Send to Chewie</button>
+</form>
+
+
+
     <p><label for="indoor">
         <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
       </label>
