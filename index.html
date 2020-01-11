@@ -1,113 +1,122 @@
 <!DOCTYPE html>
 <!-- Imports font from online to use - In this case from google -->
 <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
 <html lang="en">
 
 <!-- Information about page should be inside head tag. link, meta, title, and style usually go here -->
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155863647-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155863647-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-155863647-1');
+  </script>
 
-  gtag('config', 'UA-155863647-1');
-</script>
-
-  <link rel="stylesheet" type= "text/css" href="style.css">
+<!-- Links to the stylesheet -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chewie's secret homepage</title>
-  <link href="stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 
-<!--Content of page within body tag-->
+<!--All page content is written within the body tag-->
 <body>
-<!--h1 and h2 are headings and class=lobster sets font as lobster-->
-<h1 class="lobster"> Chewie's secret homepage</h1>
+  <!--h1 and h2 are headings and class=lobster sets font as lobster-->
+  <h1 class="lobster"> Chewie's secret homepage</h1>
 
-<!--I am here styling "I am chewie" inline with the colour blue - Giving stuff IDs helps when you want to refeer to it in JavaScript -->
-<h2 style="color: blue;" id = "Heading">I am chewie</h2>
-<!--main is the the main text area - I dont know the precise significance of this yet -->
-<main>
-  <!-- p are simple paragraphs -->
-  <p>
-    I like to eat.</p>
+  <!--I am here styling "I am chewie" inline with the colour blue - Giving stuff IDs helps when you want to refeer to it in JavaScript -->
+  <h2 style="color: blue;" id="Heading">I am chewie</h2>
+  <!--main is the the main text area - I dont know the precise significance of this yet -->
+  <main>
 
 
-  <p id= "some_text"> I also like to play with Åke
-  </p>
-  <!-- This is insertion of images-->
-  <img src="./images/chewie_at_sea_01.jpg" class="larger-image thin-red-border" alt="Chewie at sea" />
-  <p>
-<div class="silver-background">
-    <p>Things Chewie love:</p>
-    <!-- This is a basic/unordered list -->
-    <ul>
-      <li>Small boxes</li>
-      <li>Louise</li>
-      <li>Åke</li>
-    </ul>
-
-    <!-- This is an ordered list -->
-    <p>Top 3 things Chewie hate:</p>
-    <ol>
-      <li>Ted?</li>
-      <li>Water</li>
-      <li>The open sea - As seen in this photo</li>
-    </ol>
-</div>
-  </p>
-
-  <p>
-    <a href="#footer">Jump to the bottom of the sea</a>
-  </p>
-
-  <form name="contact" method="POST" data-netlify="true">
+<!-- Here I want to create a  small box around my first two paragraphs - See CSS file -->
+<div class="box">
+    <!-- p are simple paragraphs -->
+    <!-- We can play around with different text element using different tags, for example the strong tag. -->
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>
+      <strong>I like to eat.</strong></p>
+    <p id="some_text"> I also like to play with Åke
     </p>
+  </div>
+    <!-- This is insertion of images-->
+    <img src="./images/chewie_at_sea_01.jpg" class="larger-image thin-red-border" alt="Chewie at sea" />
     <p>
-      <label>Do you like Chewie?<select name="role[]" multiple>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select></label>
+      <div class="silver-background">
+        <p>Things Chewie love:</p>
+        <!-- This is a basic/unordered list -->
+        <ul>
+          <li>Small boxes</li>
+          <li>Louise</li>
+          <li>Åke</li>
+        </ul>
+
+        <!-- This is an ordered list -->
+        <p>Top 3 things Chewie hate:</p>
+        <ol>
+          <li>Ted?</li>
+          <li>Water</li>
+          <li>The open sea - As seen in this photo</li>
+        </ol>
+      </div>
     </p>
+
     <p>
-      <label>Message: <textarea name="message"></textarea></label>
+      <a href="#footer">Jump to the bottom of the sea</a>
     </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
-<form name="sent_stuff_to_chewie" method="POST" data-netlify="true" id="form">
-    <input type="text" required placeholder="Stuff for Chewie">
-    <button type="submit">Send to Chewie</button>
-    <p><label for="indoor">
-        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
+
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Do you like Chewie?<select name="role[]" multiple>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+    <form name="sent_stuff_to_chewie" method="POST" data-netlify="true" id="form">
+      <input type="text" required placeholder="Stuff for Chewie">
+      <button type="submit">Send to Chewie</button>
+      <p><label for="indoor">
+          <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
+        </label>
+        <label for="outdoor">
+          <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+        </label></p>
+      <label for="loving">
+        <input id="loving" type="checkbox" name="personality" value="loving" checked> Loving
       </label>
-      <label for="outdoor">
-        <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
-      </label></p>
-    <label for="loving">
-      <input id="loving" type="checkbox" name="personality" value="loving" checked> Loving
-    </label>
-    <label for="energetic">
-      <input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic
-    </label>
-    <label for="lazy">
-      <input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy
-    </label>
-  </form>
+      <label for="energetic">
+        <input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic
+      </label>
+      <label for="lazy">
+        <input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy
+      </label>
+    </form>
 
-  <p>View more <a href="chewie.html"> Chewie photos</a>
-  </p>
-  <footer id="footer">
-    This it the last of Chewie
-  </footer>
-</main>
+    <p>View more <a href="chewie.html"> Chewie photos</a>
+    </p>
+    <footer id="footer">
+      This it the last of Chewie
+    </footer>
+<h4 id="text_align_test">
+  This is a test of text alignement
+  <!-- Alignment iteslf is done in CSS -->
+</h4>
+  </main>
 </body>
+
 </html>

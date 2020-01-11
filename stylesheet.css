@@ -1,44 +1,75 @@
-/* Define root variables that works on whole page - Can use to define more styles (i.e. all lines are one color)*/
+/* This stylesheet is built for index.html and is the contains alot of different commands i have used to lear CSS and HTML */
+/* Root variables that works on whole page - can be used to declare global CSS variables (i.e. all lines are one color)*/
 :root {
-  --thin-red-border: white;
+  /* Defines the variable "thin-red-line" as the color orange (does not currently work) */
+  --variable1: orange;
+  --variable1: 10px;
+  --variable1: 50%;
 }
 
-  h1 {
-    color: red;
-  }
+/* This is just standard variables that are defined */
+/* This ads color to h1 */
+h1 {
+  color: red;
+}
 
-/* Define .blue-text string as color blue */
+/* Here i define a boxes which i use in my html (based on class) */
+.box1{
+  width: 400px;
+  border: 1px solid black;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin: 10px 5px;
+  padding: 4px;
+}
+.box2{
+  width: 400px;
+  border: 1px solid black;
+  background-color: orange;
+  border-radius: 5px;
+  margin: 1px 5px;
+  padding: 10px 10px;
+}
+/* Define .blue-text class as color blue - In HTMl you can refeer back to this using the CLASS command. CLASS is usually better than ID */
 .blue-text {
   color: blue;
 }
 
 /* Define .blue-text string as color blue */
-.px13{
+.px13 {
   font-size: 13px;
 }
 
 /* Define Lobster string as lato font and degrade to monospace if lato is not avaliable*/
-.lobster{
+.lobster {
   font-family: "Lato", monospace;
 }
 
-/* Set size of image*/
-.larger-image {
-   width: 500px;
- }
-
- /* Defines a border */
-.thin-red-border {
-  border-color: var(--thin-red-border);
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 50% /*one can also use px*/;
+/* Set size of image as the sting larger.image*/
+.image {
+  width: 400px;
 }
 
-.silver-background{
+/* Defines a border based on a previously defined variable (thin-red-border) */
+.thin-red-border {
+  border-width: var(--variable1);
+  border-color: var(--test-color);
+  border-style: solid;
+  border-radius: var(--variable1);
+  /*one can also use px*/
+  ;
+}
+
+/* Defines the string silver-background as silver */
+.silver-background {
   --test-color: pink;
   background-color: silver;
+}
 
+/* Aligns text - h4 -- You can align test to center, right, left or justify (lige marger) */
+#text_align_test{
+  text-align: left;
+  color: pink;
 }
 
 /* Defines a thing based on the ID (#)*/
@@ -47,11 +78,11 @@
 }
 
 /* Defines the margins (space around) for the ratio buttons (checkboxes)*/
-[type="checkbox"]{
+[type="checkbox"] {
   margin: 20px 1px 20px 0px;
 }
 
 /* Gives the entire background a color */
-body{
-  background-color: rgb(137,207,240);
+body {
+  background-color: rgb(137, 207, 240);
 }
