@@ -12,6 +12,32 @@
 h1 {
   color: red;
   font-size: 40px;
+/* we can also transform the text to uppercase, lowercase, capitaize, and more */
+text-transform: uppercase;
+font-weight: 500;
+}
+
+/* I can move items using CSS - it pushes stuff away from the direction sepcified- ignoring HTML flow */
+
+h2 {
+  position: relative;
+  bottom: 15px;
+  left: 10px;
+}
+
+/* We can also use absolute positions - which lock something  and fixed - which sets it somewhere absolute - wont move when person scrool - its just there!*/
+/* This creates a fixed boxed (it is fixed to the same place at the screen) */
+.chewie-box{
+position: fixed;
+top:200px;
+right:20px;
+border-radius: 50%;
+width: 200px;
+border-style: solid;
+border-color: red;
+border-width: 10px;
+
+
 }
 
 /* Here i define a boxes which i use in my html (based on class)  Also adds shadows*/
@@ -33,8 +59,13 @@ h1 {
   margin: 1px 5px;
   padding: 10px 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
 }
+
+/* Link class definition - only if mouse hover over it*/
+.links:hover{
+  color: pink;
+}
+
 /* Define .blue-text class as color blue - In HTMl you can refeer back to this using the CLASS command. CLASS is usually better than ID */
 .blue-text {
   color: blue;
@@ -72,16 +103,16 @@ h1 {
   background-color: silver;
 }
 
-/* Aligns text - h4 -- You can align test to center, right, left or justify (lige marger) */
+/* Aligns text - h4 -- You can align test to center, right, left or justify (lige marger) - Text can only be aligned inside a div */
 #text_align_test{
   text-align: center;
   font-size: 20px;
-
 }
 
 /* Defines a thing based on the ID (#) - Here we can set the opaciy by using the a statement after rgb*/
 #some_text {
   background-color: rgba(45, 45, 45, 0.1);
+  line-height: 25px;
 }
 
 /* Defines the margins (space around) for the ratio buttons (checkboxes)*/
