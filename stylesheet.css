@@ -74,8 +74,9 @@ h1 {
 
 /* Aligns text - h4 -- You can align test to center, right, left or justify (lige marger) */
 #text_align_test{
-  text-align: left;
-  color: pink;
+  text-align: center;
+  font-size: 20px;
+
 }
 
 /* Defines a thing based on the ID (#) - Here we can set the opaciy by using the a statement after rgb*/
