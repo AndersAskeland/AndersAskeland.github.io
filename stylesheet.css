@@ -8,12 +8,13 @@
 }
 
 /* This is just standard variables that are defined */
-/* This ads color to h1 */
+/* This ads color to h1 - changes tags -  and change the font size */
 h1 {
   color: red;
+  font-size: 40px;
 }
 
-/* Here i define a boxes which i use in my html (based on class) */
+/* Here i define a boxes which i use in my html (based on class)  Also adds shadows*/
 .box1{
   width: 400px;
   border: 1px solid black;
@@ -21,6 +22,8 @@ h1 {
   border-radius: 5px;
   margin: 10px 5px;
   padding: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 .box2{
   width: 400px;
@@ -29,6 +32,8 @@ h1 {
   border-radius: 5px;
   margin: 1px 5px;
   padding: 10px 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 /* Define .blue-text class as color blue - In HTMl you can refeer back to this using the CLASS command. CLASS is usually better than ID */
 .blue-text {
@@ -72,9 +77,9 @@ h1 {
   color: pink;
 }
 
-/* Defines a thing based on the ID (#)*/
+/* Defines a thing based on the ID (#) - Here we can set the opaciy by using the a statement after rgb*/
 #some_text {
-  background-color: green;
+  background-color: rgba(45, 45, 45, 0.1);
 }
 
 /* Defines the margins (space around) for the ratio buttons (checkboxes)*/
