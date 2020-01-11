@@ -62,6 +62,8 @@ top:70px;
 right:20px;
 border-radius: 50%;
 width: 140px;
+/* We can use the z-index to get this on top */
+z-index: 2;
 }
 
 /* Here i define a boxes which i use in my html (based on class)  Also adds shadows*/
