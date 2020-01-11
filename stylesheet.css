@@ -6,6 +6,30 @@
   --variable1: 10px;
   --variable1: 50%;
 }
+/* This should create a navigationbar */
+.header {
+  width:100%;
+  height: 180px;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background: grey;
+
+}
+
+/* This should more all the content bellow this box */
+.content {
+  width: 100%;
+  height: 900px;
+  margin-top:200px;
+}
+
+.footer {
+  width:100%
+  height:40px;
+  background:green;
+  margin-bottom: 0px;
+}
 
 /* This is just standard variables that are defined */
 /* This ads color to h1 - changes tags -  and change the font size */
@@ -29,19 +53,16 @@ h2 {
 /* This creates a fixed boxed (it is fixed to the same place at the screen) */
 .chewie-box{
 position: fixed;
-top:200px;
+top:70px;
 right:20px;
 border-radius: 50%;
-width: 200px;
-border-style: solid;
-border-color: red;
-border-width: 10px;
-
-
+width: 140px;
 }
 
 /* Here i define a boxes which i use in my html (based on class)  Also adds shadows*/
 .box1{
+  top: 200px;
+
   width: 400px;
   border: 1px solid black;
   background-color: #ccc;
