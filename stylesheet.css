@@ -53,6 +53,7 @@ h1 {
 /* Set size of image as the sting larger.image*/
 .image {
   width: 400px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /* Defines a border based on a previously defined variable (thin-red-border) */
