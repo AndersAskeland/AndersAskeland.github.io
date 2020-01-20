@@ -16,18 +16,21 @@ p{
 }
 
 ul {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto 50px auto;
   text-align: left;
   line-height: 1.5;
 }
 #image{
   border-radius: 50px;
-  padding: 20px;
-  width: 500px;
+  padding: 0 10px 0 10px;
+  width: 600px;
   filter: grayscale(30%);
   }
 
+#paragraph{
+
+}
 #img_caption {
   font-size: 1.5rem;
   margin: 10px 0 5px 0;
