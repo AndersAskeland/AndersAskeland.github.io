@@ -28,6 +28,12 @@ ul {
   filter: grayscale(30%);
   }
 
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
 #paragraph{
 
 }
