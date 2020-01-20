@@ -21,7 +21,12 @@ ul {
   text-align: left;
   line-height: 1.5;
 }
-.images{
+#image{
+  border-radius: 50px;
+  padding: 20px;
+  width: 500px;
+  filter: grayscale(30%);
+  }
 
 #img_caption {
   font-size: 1.5rem;
