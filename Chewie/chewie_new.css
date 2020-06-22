@@ -1,0 +1,45 @@
+html{
+  font-size: 10px;
+  background: #f0eee4;
+}
+body {
+  font-family: "Helvetica";
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+p{
+}
+
+ul {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.5;
+}
+#image{
+  border-radius: 50px;
+  padding: 0 10px 0 10px;
+  width: 600px;
+  filter: grayscale(30%);
+  }
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#paragraph{
+
+}
+#img_caption {
+  font-size: 1.5rem;
+  margin: 10px 0 5px 0;
+}
+
+}
