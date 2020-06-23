@@ -12,8 +12,6 @@ h1{
   font-size: 4rem;
 }
 
-p{
-}
 
 ul {
   max-width: 600px;
@@ -34,9 +32,7 @@ img {
   height: auto;
   margin: 0 auto;
 }
-#paragraph{
 
-}
 #img_caption {
   font-size: 1.5rem;
   margin: 10px 0 5px 0;
