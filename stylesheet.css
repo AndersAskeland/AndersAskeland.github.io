@@ -19,7 +19,11 @@ body, html {
     top: 0;
     left: 16px;
   }
-  
+  .links {
+    position: absolute;
+    text-align: center;
+    font-size: 20;
+  }
   .bottomleft {
     position: absolute;
     bottom: 0;
