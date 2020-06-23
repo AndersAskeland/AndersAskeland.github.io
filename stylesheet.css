@@ -22,7 +22,7 @@ body, html {
   .links {
     position: absolute;
     text-align: center;
-    font-size: 20;
+    font-size: 1rem;
   }
   .bottomleft {
     position: absolute;
