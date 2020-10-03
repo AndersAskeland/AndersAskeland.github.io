@@ -5,26 +5,28 @@
 
 <!-- Information about page should be inside head tag. link, meta, title, and style usually go here -->
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155863647-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-155863647-1');
-  </script>
-
 <!-- Links to the stylesheet -->
-  <link rel="stylesheet" type="text/css" href="/Chewie/chewie_old.css">
+  <link rel="stylesheet" type="text/css" href="first.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chewie's secret homepage</title>
 </head>
+
+
+
+
+
 <!--All page content is written within the body tag-->
-<body>
+<body id="background">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">1. HTML & CSS</li>
+    </ol>
+  </nav>
   <div class="header">
   <!--h1 and h2 are headings and class=lobster sets font as lobster-->
   <h1 class="lobster"> Chewie's <s>secret</s> not so secret homepage</h1>

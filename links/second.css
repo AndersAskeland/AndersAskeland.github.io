@@ -1,15 +1,12 @@
-html{
-  font-size: 10px;
+#background{
   background: #f0eee4;
-}
-body {
   font-family: "Helvetica";
   text-align: center;
-  font-size: 1.5rem;
 }
 
-h1{
-  font-size: 4rem;
+
+#paragraph{
+  font-size: 1.5rem;
 }
 
 
