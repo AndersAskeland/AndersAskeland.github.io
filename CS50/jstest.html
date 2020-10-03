@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create alert based on input -->
+    <h1>Hello world - Alert</h1>
+    <form onsubmit="greet(); return false;"> <!-- Greet user, and do nothing else - Return false -->
+        <input id = "name" type="text">
+        <input type="submit">
+    </form>
+    <p> </p>
+
+
+    <!-- Update HTML with name -->
+    <h1>Hello world - Update HTML</h1>
+    <form onsubmit="greet2(); return false;"> <!-- Greet user, and do nothing else - Return false -->
+        <input id = "name2" type="text">
+        <input type="submit">
+    </form>
+    <div id="result">
+        Hello!
+    </div>
+
+    <!-- Update HTML with counter -->
+    <h1>Counter</h1>
+    <form onsubmit="increment(); return false;"> <!-- Greet user, and do nothing else - Return false -->
+        <input type="submit">
+    </form>
+    <div id = "incrementer">
+        0
+    </div>
+
+    <h1 id="button">Buttons</h1>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+
+    <!-- Update HTML with counter -->
+    <h1>Select</h1>
+    <p id="select">This is some text</p>
+    <select name="" id="">
+        <option value="large">Large</option>
+        <option value="initial" selected>Medium</option> <!-- Default -->
+        <option value="small">Small</option>
+    </select>
+
+    <!-- Blinking -->
+    <h1>Blinking</h1>
+
+    <p id="blink">Hello, world!</p>
+
+    <!-- Geolocation -->
+    <h1>Geolocation</h1>
+    <p>I dont think that this works unless it is on a real website</p>
+    <script>
+        navigator.geolocation.getCurrentPosition(function (position) 
+        {
+            document.write(position.coords.latitude + ', ' + position.coords.longitude);
+        }
+        );
+    </script>    
+
+</body>
+<script src="jstest.js"></script> <!-- Some stuff wont work if you have the script in the beginning -->
+</html>

@@ -1,0 +1,79 @@
+/* Fill page with image */
+body, html {
+    padding-top: 0rem;
+    height: 100%;
+    margin: 0;
+}
+
+.center{
+    position: relative;
+    top: 30%;
+
+}
+
+.card-deck{
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+.card{
+    height: 22rem;
+}
+
+.text{
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+/* Background image - Set to norway? */
+.bgimg {
+    background-image: url('/images/forestbridge.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Set my name */
+#topleft {
+    padding-left: 20px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+}
+
+/* The links to different webpages */
+#links {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    color: brown;
+}
+
+/* Text in bottom */
+#bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+}
+
+/* Title center */
+#middle {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+/* Line */
+hr {
+    margin-top: 0.7rem;
+    margin-bottom: .7rem;
+    border: 0;
+    width: 50%;
+    border-top: 1px solid rgb(255, 255, 255);
+}
