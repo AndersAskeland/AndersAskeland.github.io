@@ -11,7 +11,8 @@ body, html {
 
 }
 .card{
-    height: 11rem;
+    height: 9rem;
+    width: 10rem;
 }
 
 .card-deck{
