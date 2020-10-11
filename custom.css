@@ -5,27 +5,29 @@ body, html {
     margin: 0;
 }
 
-.center{
+.top{
     position: relative;
-    top: 30%;
-
-}
-.card{
-    height: 9rem;
-    width: 10rem;
+    top: 27%;
+    text-align: center;
 }
 
-.card-deck{
-    padding-right: 5rem;
-    padding-left: 5rem;
-}
+
 
 .text{
     color: white;
     font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
 }
 
+.bg_no{
+    background-image: url('/images/bgGray.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
 /* Background image - Set to norway? */
 .bgimg {
     background-image: url('/images/forestbridge.jpg');
@@ -67,6 +69,7 @@ body, html {
     left: 50%;
     text-align: center;
     font-size: 1.3rem;
+    font-weight: 00;
 }
 
 
@@ -75,6 +78,6 @@ hr {
     margin-top: 0.7rem;
     margin-bottom: .7rem;
     border: 0;
-    width: 50%;
-    border-top: 1px solid rgb(255, 255, 255);
+    width: 33%;
+    border-top: 1.6px solid rgb(0, 0, 0);
 }
