@@ -10,12 +10,19 @@
 
 
 <body>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">3. JavaScript</li>
-        </ol>
-      </nav>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand mr-4" href="/">Anders Askeland</a>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="/">Home</a>
+                <a class="nav-item nav-link" href="/about">Portfolio</a>
+                <a class="nav-item nav-link" href="#" onclick="window.location.reload(true);">CV</a>
+            </div>
+            
+        </div>
+    </nav>
+    
     <!-- Create alert based on input -->
     <h1>Hello world - Alert</h1>
     <form onsubmit="greet(); return false;"> <!-- Greet user, and do nothing else - Return false -->
