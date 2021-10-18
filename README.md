@@ -1,4 +1,4 @@
 # AndersAskeland.github.io
-This is nothing more than my website!
+Code for my personal webpage.
 
-Which is currently built using HTML only.
+Visit at: [www.askeland.me](Askeland.me)
