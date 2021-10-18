@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["/css/tailwind.css"],
+  purge: ["./index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
