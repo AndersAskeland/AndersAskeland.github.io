@@ -29,7 +29,11 @@ jobs:
         npm install -D tailwindcss postcss autoprefixer vite
         npm run build --if-present
 
-    
+    - name: Create CNAME file
+      run: |
+        touch dist/CNAME
+        echo “askeland.me” > dist/CNAME
+        
     - name: Commit and pull
       run: |
         git config --local user.name "$GITHUB_ACTOR"
