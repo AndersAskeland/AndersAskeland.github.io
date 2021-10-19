@@ -5,9 +5,8 @@ name: Build tailwind webpage
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+     paths: ['**.html']
+
 
 jobs:
   build:
