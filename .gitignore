@@ -1,5 +1,7 @@
 .vscode
 /node_modules
 /bower_components
-.next
+.next/cache
+.next/server
+
 /out
