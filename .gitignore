@@ -3,5 +3,5 @@
 /bower_components
 .next/cache
 .next/server
-
+.next
 /out
