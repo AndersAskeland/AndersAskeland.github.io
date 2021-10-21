@@ -1,27 +1,18 @@
 {
-  "name": "andersaskeland.github.io",
-  "version": "1.0.0",
-  "description": "Code for my personal webpage.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndersAskeland/AndersAskeland.github.io.git"
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AndersAskeland/AndersAskeland.github.io/issues"
-  },
-  "homepage": "https://github.com/AndersAskeland/AndersAskeland.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.17",
-    "vite": "^2.6.10"
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }
