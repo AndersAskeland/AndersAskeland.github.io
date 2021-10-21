@@ -5,7 +5,7 @@ name: Build tailwind webpage
 
 on:
   push:
-    branches: [main]
+    branches: [next_js]
     paths: ['**.html']
 
 
