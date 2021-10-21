@@ -6,8 +6,6 @@ name: Build tailwind webpage
 on:
   push:
     branches: [next_js]
-    paths: ['**.html']
-
 
 jobs:
   build:
