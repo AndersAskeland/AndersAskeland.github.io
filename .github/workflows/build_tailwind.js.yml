@@ -7,9 +7,10 @@ on:
   push:
     branches: [eleventy]
     paths:
-      - './src/*.{js,ts,jsx,tsx,html}'
-      - './src/*.{js,ts,jsx,tsx,html}'
-      - 'src/*.{js,ts,jsx,tsx,html}'
+      - './src/**.{js,ts,jsx,tsx,html}'
+      - './src/**.{js,ts,jsx,tsx,html}'
+      - 'src/**.{js,ts,jsx,tsx,html}'
+
 
 
 jobs:
