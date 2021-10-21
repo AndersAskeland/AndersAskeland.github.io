@@ -7,8 +7,8 @@ on:
   push:
     branches: [next_js]
     paths:
-      - 'pages/**.{js,ts,jsx,tsx}'
-      - 'components/**.{js,ts,jsx,tsx}'
+      - 'pages/**.js'
+      - 'components/**.js'
 jobs:
   build:
 
