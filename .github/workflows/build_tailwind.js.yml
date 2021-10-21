@@ -5,12 +5,12 @@ name: Deploy to GitHub pages
 
 on:
   push:
-    branches: [eleventy]
+    branches: [eleventy_vite]
     paths:
       - './src/**.{js,ts,jsx,tsx,html}'
       - './src/**.{js,ts,jsx,tsx,html}'
       - 'src/**.{js,ts,jsx,tsx,html}'
-      - 'src/**.html'
+      - 'src/**.jsx'
 
 
 
