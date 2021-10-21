@@ -1,13 +1,17 @@
+/* Constants */
+const { DateTime } = require("luxon");
+
+
 /* Settings for evently */
 module.exports = function (eleventyConfig) {
 
     /* Define location of CSS files */
     eleventyConfig.addWatchTarget("./tailwind.config.js");
-    eleventyConfig.addWatchTarget("./src/styles/tailwind.css");
+    eleventyConfig.addWatchTarget("./src/css/tailwind.css");
 
     /* Pass css as style.css */
     eleventyConfig.addPassthroughCopy({
-        "./src/styles/tailwind.css": "./style.css",
+        "./src/css/tailwind.css": "./style.css",
     });
 
     /* Dont know */
