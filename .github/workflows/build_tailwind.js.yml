@@ -7,10 +7,10 @@ on:
   push:
     branches: [eleventy_vite]
     paths:
-      - './src/**.{js,ts,jsx,tsx,html}'
-      - './src/**.{js,ts,jsx,tsx,html}'
-      - 'src/**.{js,ts,jsx,tsx,html}'
-      - 'src/**.jsx'
+      - 'src/**.js}'
+      - 'src/**.md'
+      - 'src/**.html'
+      - 'src/**.njk'
 
 
 
