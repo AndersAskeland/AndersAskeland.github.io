@@ -5,7 +5,8 @@ name: Build tailwind webpage
 
 on:
   push:
-     paths: ['**.html']
+    branches: [main]
+    paths: ['**.html']
 
 
 jobs:
@@ -23,19 +24,24 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v2
 
-    - name: Build file
+    - name: Install packages
+      run: npm ci
+
+    - name: Build project
       run: |
-        npm install -D tailwindcss postcss autoprefixer vite
-        npm run build --if-present
+        npm run build
+    
+    - name: Export static files
+      run: npm run export
 
     - name: Create CNAME file
       run: |
-        touch dist/CNAME
-        echo askeland.me > dist/CNAME
+        touch out/CNAME
+        echo askeland.me > out/CNAME
         
     - name: Commit and pull
       run: |
         git config --local user.name "$GITHUB_ACTOR"
         git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-        git commit dist -m 'CI: Built page.' || echo "No changes to commit"
-        git push origin `git subtree split --prefix dist master`:gh-pages --force
+        git commit out -m 'CI: Built page.' || echo "No changes to commit"
+        git push origin `git subtree split --prefix out master`:gh-pages --force
