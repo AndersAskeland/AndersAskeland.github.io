@@ -35,6 +35,9 @@ jobs:
     - name: Add .nojekyll file
       run: touch ./dist/.nojekyll
     
+    - name: Look at files
+      run: ls dist
+      
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
