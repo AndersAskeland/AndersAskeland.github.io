@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import PrefixedLink from "../components/prefixedlink";
 import Head from 'next/head';
 import Layout from "../../components/layout"
 
@@ -10,9 +10,9 @@ export default function FirstPost() {
     </Head>
       <h1>First Post</h1>
       <h2>
-        <Link href="/">
+        <PrefixedLink href="/">
           <a className="text-2xl text-blue-400">Back to home</a>
-        </Link>
+        </PrefixedLink>
       </h2>
     </Layout>
   )

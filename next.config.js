@@ -1,4 +1,10 @@
+const pathPrefix = process.env.NODE_ENV === 'production'
+  ? '/AndersAskeland.github.io'
+  : '';
+
 module.exports = {
-    basePath: '/wallisconsultancy',
-    assetPrefix: '/wallisconsultancy/',
-}
+  assetPrefix: pathPrefix,
+  env: {
+    pathPrefix,
+  },
+};
