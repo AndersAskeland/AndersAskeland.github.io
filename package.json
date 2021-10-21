@@ -1,19 +1,27 @@
 {
-  "private": true,
+  "name": "andersaskeland.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start"
+    "start": "eleventy --serve & npx tailwindcss -i src/styles/tailwind.css -c tailwind.config.js -o dist/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production npx tailwindcss -i src/styles/tailwind.css -c tailwind.config.js -o dist/style.css --minify"
   },
-  "dependencies": {
-    "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersAskeland/AndersAskeland.github.io.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndersAskeland/AndersAskeland.github.io/issues"
+  },
+  "homepage": "https://github.com/AndersAskeland/AndersAskeland.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17"
   }
 }

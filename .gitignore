@@ -1,7 +1,4 @@
-.vscode
-/node_modules
-/bower_components
-.next/cache
-.next/server
-.next
-/out
+node_modules
+dist
+.DS_Store
+.prettierrc
