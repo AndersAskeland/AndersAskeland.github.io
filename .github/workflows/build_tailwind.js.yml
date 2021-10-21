@@ -13,10 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
-    env:
-      NEXT_PUBLIC_BASE_PATH: /AndersAskeland.github.io
-
+  
     steps:
     - name: Checkout repo/get files
       uses: actions/checkout@v2
@@ -33,7 +30,10 @@ jobs:
     
     - name: Export static files
       run: npm run export
-        
+
+    - name: Add .nojekyll file
+      run: touch ./out/.nojekyll
+    
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
