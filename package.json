@@ -27,5 +27,10 @@
   },
   "dependencies": {
     "nunjucks": "^3.2.3"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "useTabs": false,
+    "printWidth": 99999
   }
 }
