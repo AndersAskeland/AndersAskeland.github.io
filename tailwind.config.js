@@ -1,8 +1,12 @@
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.njk"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', '"-apple-system"','BlinkMacSystemFont']
+      }
+    },
   },
   variants: {
     extend: {},

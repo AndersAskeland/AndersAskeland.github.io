@@ -1,20 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1 class="text-6xl">{{ title }}</h1>
-    </header>
-    <main>
-        <h2 class="text-red-900">This is also a test of color. Should be red</h2>
-        {{ content | safe }}
-    </main>
+    <link rel="stylesheet" href="style.css" />
 
-</body>
+    <!-- Extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Dark mode -->
+    <script>
+      function setTheme() {
+        if (
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+      localStorage.theme = 'light'
+      document.getElementById("change_theme").onclick = setTheme;
+      document.getElementById("change_theme").onclick = function () { alert('hello!'); };
+
+
+    </script>
+  </head>
+
+  <!-- Main site -->
+  <body>
+    <main>
+      <!-- Navigation bar -->
+      <nav class="flex justify-between flex-wrap bg-gray-600 p-3 text-gray-200 dark:bg-gray-100">
+        <!-- Left side -->
+        <div class="flex items-center fill-current space-x-2">
+          <span>
+            <a class="font-montserrat font-medium text-l" href="/">
+              {{ title }}
+            </a>
+          </span>
+          <p>|</p>
+          <button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+                      <svg
+              class="dark:hidden"
+              id="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentcolor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+            <svg class="light:hidden"
+              id="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentcolor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Button for phone -->
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded">
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      {{ content | safe }}
+    </main>
+    <footer>
+      <p>&copy; 2021 An desrs Askeland</p>
+    </footer>
+  </body>
 </html>
