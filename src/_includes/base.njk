@@ -21,42 +21,49 @@
     </head>
 
     <!-- Main site -->
-    <body class="dark:bg-gray-800">
+    <body class="bg-gray-100 text-gray-900 dark:text-gray-100 dark:bg-background">
         <main>
             <!-- Navigation bar -->
-            <nav class="flex justify-between flex-wrap bg-gray-600 p-3 text-gray-200 dark:bg-gray-600">
+            <nav class="flex justify-between flex-wrap p-3">
                 <!-- Left side -->
                 <div class="flex items-center fill-current space-x-2">
                     <span>
-                        <a class="font-montserrat font-medium text-l" href="/">
+                        <a class="font-montserrat font-medium text-xl" href="/">
                             {{ metadata.title }}
                         </a>
                     </span>
                     <p>|</p>
-                    <img src="../img/dark_mode_black_24dp.svg" alt="" />
 
                     <!-- Toggle dark modef -->
                     <button id="switchTheme">
-
-                        <div>
-                            <svg class="dark:hidden" id="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <img class="hidden dark:block" src="../img/sun.svg" alt="" />
-                        </div>
+                        <svg class="dark:hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+                        <svg class="hidden dark:block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5" />
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                        </svg>
                     </button>
                 </div>
 
-                <!-- Button for phone -->
-                <div class="block lg:hidden">
-                    <button class="flex items-center px-3 py-2 border rounded">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
-                    </button>
+                <!-- Right side -->
+                <div>
+                    <!-- Long menu -->
+                    <div class="w-full block flex-grow md:flex md:items-center md:w-auto">
+                        <div class="hidden md:block text-sm md:flex-grow">
+                            <a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4"> Blog </a>
+                            <a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4"> Stuff I've made </a>
+                            <a href="#responsive-header" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white"> CV </a>
+                        </div>
+                    </div>
+
+                    <div class="block md:hidden">
+                        <!-- Mobile menu -->
+                        <button class="flex items-center px-3 py-2 border rounded">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </nav>
 
