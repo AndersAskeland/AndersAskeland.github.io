@@ -9,9 +9,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet" />
-        
+
         <!-- Alpine js -->
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>    
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </head>
 
     <!-- Main site -->
@@ -54,16 +54,42 @@
                             </div>
                         </div>
 
-                        <!-- Mobile (md) -->
+                        <!-- Mobile dropdown (md & below) -->
                         <div class="block md:hidden">
-                            <nav x-data="{ open: false }">
-                                <button class="block relative p-3 focus:outline-none" @click="open = !open">
-                                    <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                                        <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                                        <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                            <nav x-data="{ dropdownOpen: false }">
+                                <!-- Button -->
+                                <button class="block relative p-3 focus:outline-none" @click="dropdownOpen = !dropdownOpen">
+                                    <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'rotate-45': dropdownOpen,' -translate-y-1.5': !dropdownOpen }"></span>
+                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'opacity-0': dropdownOpen } "></span>
+                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'-rotate-45': dropdownOpen, ' translate-y-1.5': !dropdownOpen}"></span>
                                     </div>
                                 </button>
+
+                                <!--  -->
+                                <div x-show="dropdownOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform opacity-0 scale-50" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95"class="absolute right-3 mt-2 bg-white rounded-md shadow-lg overflow-hidden z-20 w-52">
+                                    <div class="py-2">
+                                        
+                                        <a href="/pages/about_me/" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                                            <p class="text-gray-600 text-lg mx-2 items-center">
+                                                About me
+                                            </p>
+                                        </a>
+                                        
+                                        <a href="/pages/projects/" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                                            <p class="text-gray-600 text-lg mx-2 items-center">
+                                                Projects
+                                            </p>
+                                        </a>
+                                        
+                                        <a href="/pages/resume/" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
+                                            <p class="text-gray-600 text-lg mx-2 items-center">
+                                                Resume
+                                            </p>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
                             </nav>
                         </div>
                     </div>
@@ -80,7 +106,7 @@ This is my content</p>
             <!-- Footer -->
             <footer class="flex flex-col items-center">
                 <div class="flex flex-row items-center fill-current space-x-2 text-xs">
-                    <p id="footer"> <!-- Javasrcipt --></p>
+                    <p id="footer"><!-- Javasrcipt --></p>
                     <p>|</p>
                     <a class="items-center" href="https://github.com/AndersAskeland/AndersAskeland.github.io" target="_blank">
                         <div class="flex flex-row space-x-2 items-center fill-current">
