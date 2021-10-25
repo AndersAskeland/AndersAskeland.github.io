@@ -29,12 +29,12 @@
 
     <!-- Main site -->
     <body class="bg-gray-100 text-gray-900 dark:text-gray-100 dark:bg-background">
-        <div class="h-screen flex flex-col justify-between max-w-7xl mx-auto p-3">
+        <div class="h-screen flex flex-col justify-between max-w-7xl">
             <!-- Navigation bar/header -->
             <header>
-                <nav class="flex flex-row justify-between pb-6">
+                <nav class="flex flex-row justify-between h-12 p-3">
                     <!-- Logo -->
-                    <div class="flex flex-row items-center fill-current space-x-2">
+                    <div class="flex flex-row items-center fill-current space-x-3">
                         <span>
                             <a class="font-montserrat font-medium text-xl" href="/">
                                 Anders Askeland
@@ -53,67 +53,65 @@
                     </div>
 
                     <!-- Menu -->
-                    <div>
-                        <!-- Desktop (lg) -->
-                        <div>
-                            <div class="hidden md:block text-md">
-                                
-                                <a href="/pages/about_me/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">About me</a>
-                                
-                                <a href="/pages/projects/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">Projects</a>
-                                
-                                <a href="/pages/resume/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">Resume</a>
-                                
-                            </div>
+                    <!-- Desktop (lg) -->
+                    <div class="flex flex-row items-center">
+                        <div class="hidden md:flex text-md space-x-6">
+                            
+                            <a href="/pages/about_me/" class="md:inline-block text-teal-200 hover:text-white">About me</a>
+                            
+                            <a href="/pages/projects/" class="md:inline-block text-teal-200 hover:text-white">Projects</a>
+                            
+                            <a href="/pages/resume/" class="md:inline-block text-teal-200 hover:text-white">Resume</a>
+                            
                         </div>
+                    </div>
 
-                        <!-- Mobile dropdown (md & below) -->
-                        <div class="block md:hidden">
-                            <nav x-data="{ dropdownOpen: false }">
-                                <!-- Button -->
-                                <button class="block relative p-3 focus:outline-none" @click="dropdownOpen = !dropdownOpen">
-                                    <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'rotate-45': dropdownOpen,' -translate-y-1.5': !dropdownOpen }"></span>
-                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'opacity-0': dropdownOpen } "></span>
-                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'-rotate-45': dropdownOpen, ' translate-y-1.5': !dropdownOpen}"></span>
-                                    </div>
-                                </button>
-
-                                <!--  -->
-                                <div x-show="dropdownOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform opacity-0 scale-50" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-3 mt-2 bg-gray-100 dark:bg-gray-100 rounded-md shadow-lg overflow-hidden z-20 w-44">
-                                    <div>
-                                        
-                                        <a href="/pages/about_me/" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
-                                            <p class="dark:text-gray-700 text-lg items-center">
-                                                About me
-                                            </p>
-                                        </a>
-                                        
-                                        <a href="/pages/projects/" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
-                                            <p class="dark:text-gray-700 text-lg items-center">
-                                                Projects
-                                            </p>
-                                        </a>
-                                        
-                                        <a href="/pages/resume/" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
-                                            <p class="dark:text-gray-700 text-lg items-center">
-                                                Resume
-                                            </p>
-                                        </a>
-                                        
-                                    </div>
+                    <!-- Mobile dropdown (md & below) -->
+                    <div class="block md:hidden">
+                        <nav x-data="{ dropdownOpen: false }">
+                            <!-- Button -->
+                            <button class="block relative p-3 focus:outline-none" @click="dropdownOpen = !dropdownOpen">
+                                <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'rotate-45': dropdownOpen,' -translate-y-1.5': !dropdownOpen }"></span>
+                                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'opacity-0': dropdownOpen } "></span>
+                                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'-rotate-45': dropdownOpen, ' translate-y-1.5': !dropdownOpen}"></span>
                                 </div>
-                            </nav>
-                        </div>
+                            </button>
+
+                            <!--  -->
+                            <div x-show="dropdownOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform opacity-0 scale-50" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-3 mt-2 bg-gray-100 dark:bg-gray-100 rounded-md shadow-lg overflow-hidden z-20 w-44">
+                                <div>
+                                    
+                                    <a href="/pages/about_me/" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
+                                        <p class="dark:text-gray-700 text-lg items-center">
+                                            About me
+                                        </p>
+                                    </a>
+                                    
+                                    <a href="/pages/projects/" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
+                                        <p class="dark:text-gray-700 text-lg items-center">
+                                            Projects
+                                        </p>
+                                    </a>
+                                    
+                                    <a href="/pages/resume/" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
+                                        <p class="dark:text-gray-700 text-lg items-center">
+                                            Resume
+                                        </p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </nav>
                     </div>
                 </nav>
             </header>
 
             <!-- Content -->
-            <main class="">
+            <main class="flex h-screen justify-center items-center">
                 
 
-<header>
+<header class="relative top-0">
 PhD fellow at Aalborg Universitetshospital
 </header>
             </main>
