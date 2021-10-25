@@ -1,0 +1,289 @@
+{
+    "basics": {
+      "name": "Anders Askeland",
+      "label": "PhD fellow at Aalborg Universitetshospital",
+      "picture": "",
+      "email": "anders.askeland@gmail.com",
+      "phone": "81750357",
+      "website": "www.askeland.me",
+      "summary": "PhD fellow working within the field of metabolism, diabetes, obesity, and fatty liver disease.",
+      "location": {
+        "countryCode": "DK",
+        "address": ""
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "a-askeland",
+          "url": "https://www.linkedin.com/in/a-askeland/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Aalborg University",
+        "endDate": "",
+        "highlights": [],
+        "position": "PhD fellow",
+        "startDate": "2020-01-31",
+        "website": "https://www.linkedin.com/school/aalborg-universitet/"
+      },
+      {
+        "company": "Aalborg Universitetshospital",
+        "endDate": "2019-12-31",
+        "highlights": [],
+        "position": "Research Assistant",
+        "startDate": "2017-08-31",
+        "website": "https://www.linkedin.com/company/aalborg-universitetshospital/"
+      },
+      {
+        "company": "Aalborg Universitetshospital",
+        "endDate": "2017-07-31",
+        "highlights": [],
+        "position": "Student Research Assistant",
+        "startDate": "2016-08-31",
+        "website": "https://www.linkedin.com/company/aalborg-universitetshospital/"
+      },
+      {
+        "company": "VBM Laboratoriet A/S",
+        "endDate": "2017-01-31",
+        "highlights": [],
+        "position": "Laboratory Assistant",
+        "startDate": "2016-03-31",
+        "website": "https://www.linkedin.com/company/eurofinsmiljoe/"
+      },
+      {
+        "company": "UDECO (Underwater Design and Equipment Company)",
+        "endDate": "2015-07-31",
+        "highlights": [],
+        "position": "Seasonal Employee",
+        "startDate": "2012-01-31",
+        "website": ""
+      },
+      {
+        "company": "Fresch Thinking",
+        "endDate": "2012-07-31",
+        "highlights": [],
+        "position": "Sales Promoter",
+        "startDate": "2011-09-30",
+        "website": "https://www.linkedin.com/company/fresch-thinking/"
+      }
+    ],
+    "volunteer": [
+      {
+        "organization": "International Medical Cooperation Committee - IMCC",
+        "position": "Volunteer within the Research Exchange group",
+        "website": "https://www.linkedin.com/company/international-medical-cooperation-committee---imcc/",
+        "startDate": "2012-10-31",
+        "endDate": "2015-07-31",
+        "summary": null,
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "institution": "Aalborg University (M.Sc.)",
+        "area": "Biomedicine",
+        "studyType": "Master of Science (M.Sc.) in Medicine with industrial specialization",
+        "startDate": "2015-12-31",
+        "endDate": "2017-12-31",
+        "gpa": "",
+        "courses": [
+          "5 ECTS - Immuno- and Molecular Therapy",
+          "5 ECTS - Molecular Pathogenesis",
+          "5 ECTS - Genomics, Proteomics and Bioinformatics in Disease and Diagnostics",
+          "5 ECTS - Molecular and Cellular Methods in Biomedicine"
+        ]
+      },
+      {
+        "institution": "Aalborg University (B.Sc.)",
+        "area": "Medicine",
+        "studyType": "Bachelor of Science (B.Sc.) in Medicine with industrial specialization",
+        "startDate": "2012-12-31",
+        "endDate": "2015-12-31",
+        "gpa": "",
+        "courses": [
+          "10 ECTS - Musculoskeletal and Nervous System II",
+          "8 ECTS - Medical Microbiology",
+          "4 ECTS - General Pharmacology",
+          "8 ECTS - General Pathology",
+          "12 ECTS - Musculoskeletal and Nervous System I",
+          "7 ECTS - Biomedicine and Drug Development",
+          "2 ECTS - First aid",
+          "15 ECTS - B.Sc. Project",
+          "5 ECTS - Pharmacology in a Pre-clinical and Economic Perspective",
+          "8 ECTS - Hematology and Immunology",
+          "2 ECTS - Introduction to Communication and Cooperation",
+          "8 ECTS - Nuitrition and the Digestive System I",
+          "6 ECTS - Clinical Psychology",
+          "12 ECTS - Introduction to Medicine and Biology",
+          "4 ECTS - Endocrinology of the Reproductive System"
+        ]
+      }
+    ],
+    "awards": [],
+    "publications": [
+      {
+        "name": "Effect of short abstinence time on sperm motility parameters",
+        "publisher": "Final programme, 18th World Congress of In Vitro Ferilization, ISIVF 2015, 27-30 September 2015, Copenhagen, Denmark",
+        "releaseDate": "2015-09-27",
+        "website": "http://vbn.aau.dk/da/publications/effect-of-short-abstinence-time-on-sperm-motility-parameters(3d264fb7-8600-4157-9c82-89eaf1016497).html",
+        "summary": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "Public speaking",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "R",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Python (Programming Language)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Research",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Data analysis",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Scientific Writing",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Clinical Research",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Clinical Trials",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Medicine",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SPSS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "C",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "LaTeX",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "R (Programming Language)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Git",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Adobe InDesign",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Adobe Illustrator",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Critical thinking",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Perseus - Bioinformatics tool",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "FunRich - Functional Enrichement Tool",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Molecular Biology",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SQLAlchemy",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "python",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Qt",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Project Management",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PySide",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Project Planning",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "HTML",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PyQt",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "da",
+        "fluency": "Native Speaker"
+      }
+    ],
+    "interests": [],
+    "references": []
+  }
