@@ -63,11 +63,11 @@
                                 </button>
 
                                 <!--  -->
-                                <div x-show="dropdownOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform opacity-0 scale-50" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95"class="absolute right-3 mt-2 bg-white rounded-md shadow-lg overflow-hidden z-20 w-52">
-                                    <div class="py-2">
+                                <div x-show="dropdownOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform opacity-0 scale-50" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-3 mt-2 bg-gray-100 dark:bg-gray-100 rounded-md shadow-lg overflow-hidden z-20 w-44">
+                                    <div>
                                         {% for page in collections.pages %}
-                                        <a href="{{ page.url }}" class="flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2">
-                                            <p class="text-gray-600 text-lg mx-2 items-center">
+                                        <a href="{{ page.url }}" class="flex items-center p-3 border-b hover:bg-gray-100 mx-2">
+                                            <p class="dark:text-gray-700 text-lg items-center">
                                                 {{ page.data.title }}
                                             </p>
                                         </a>
