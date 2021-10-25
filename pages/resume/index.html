@@ -9,6 +9,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet" />
+        
+        <!-- Alpine js -->
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>    
     </head>
 
     <!-- Main site -->
@@ -44,7 +47,7 @@
                                 
                                 <a href="/pages/about_me/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">About me</a>
                                 
-                                <a href="/pages/protjects/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">Projects</a>
+                                <a href="/pages/projects/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">Projects</a>
                                 
                                 <a href="/pages/resume/" class="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">Resume</a>
                                 
@@ -53,12 +56,15 @@
 
                         <!-- Mobile (md) -->
                         <div class="block md:hidden">
-                            <button class="px-3 py-2 border rounded">
-                                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Menu</title>
-                                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                                </svg>
-                            </button>
+                            <nav x-data="{ open: false }">
+                                <button class="block relative p-3 focus:outline-none" @click="open = !open">
+                                    <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                                        <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                                        <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                                    </div>
+                                </button>
+                            </nav>
                         </div>
                     </div>
                 </nav>
