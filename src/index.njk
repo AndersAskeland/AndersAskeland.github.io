@@ -4,20 +4,22 @@ layout: base.njk
 ---
 
 <!-- Content -->
-<div class="flex flex-col items-center pb-11 transform lg:scale-150">
+<div class="flex flex-col space-y-2 transform md:scale-125 xl:scale-150">
     <!-- Image -->
-    <div>
+    <div class="flex justify-center">
         <img class="rounded-full shadow-md h-36 w-36 object-cover object-bottom" src="./img/portrait.jpg" alt="" />
     </div>
 
-    <!-- Name -->
-    <div class="grid grid-cols-1 divide-y divide-gray-900 dark:divide-gray-50 ">
-        <div class="p-2">
+    <!-- Information -->
+    <div class="grid grid-cols-1 divide-y-2 divide-gray-900 dark:divide-gray-50 w-60">
+
+        <!-- Image -->
+        <div class="flex justify-center pb-2">
             <h1 class="text-2xl">Anders Askeland</h1>
         </div>
 
         <!-- Profile links -->
-        <div class="flex flex-row items-center fill-current justify-between pl-2 pr-2 pt-2">
+        <div class="flex flex-row items-center fill-current justify-between space-x-5 pt-2 px-4">
             <a href="mailto: anders.askeland@gmail.com">
                 <div class="fill_current">
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"><path d="M12 12.713.015 3h23.971L12 12.713zm-5.425-1.822L0 5.562v12.501l6.575-7.172zm10.85 0L24 18.063V5.562l-6.575 5.329zm-1.557 1.261L12 15.287l-3.868-3.135L.022 21h23.956l-8.11-8.848z" /></svg>
