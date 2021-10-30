@@ -23,3 +23,5 @@ fields:
     maxSize: 64
   label: Image
   description: Upload image
+pages:
+- src/projects/webpage.md
