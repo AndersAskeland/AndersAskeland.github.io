@@ -9,7 +9,6 @@ sections:
 - type: document
   path: src/_data/metadata.json
   label: Metadata
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -17,6 +16,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  exclude: "*.json"
 - type: directory
   path: src/projects
   label: Projects
