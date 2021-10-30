@@ -34,4 +34,5 @@ fields:
   name: description
   label: description
 pages:
+- src/projects/r-murder-mystery.md
 - src/projects/webpage.md
