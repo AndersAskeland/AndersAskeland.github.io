@@ -4,24 +4,37 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  description: Title of the file
+- type: text
+  name: source_url
+  label: Source URL
+  description: The URL to the source code.
+- type: text
+  name: release_url
+  label: Release URL
+  description: The URL to the released version.
+- name: internal_url
+  type: text
+  config:
+    required: false
+  label: Internal URL
+  description: Internal URL
 - type: text
   name: status
   label: status
-- type: text
-  name: source
-  label: source
-- type: text
-  name: url
-  label: url
-- type: textarea
-  name: description
-  label: description
+- name: internal
+  type: boolean
+  label: Internal
+  description: Whether or not the site is internal
 - name: image
   type: file
   config:
     maxSize: 64
   label: Image
   description: Upload image
+- type: textarea
+  name: description
+  label: description
 pages:
 - src/projects/webpage.md
