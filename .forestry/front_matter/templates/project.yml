@@ -40,6 +40,7 @@ fields:
     maxSize: 64
   label: Image
   description: Upload image
+  default: "/images/300.jpeg"
 - type: textarea
   name: description
   label: description
