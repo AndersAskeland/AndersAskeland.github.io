@@ -6,14 +6,27 @@ fields:
   name: title
   label: Title
   description: Title of the file
+- name: source
+  type: boolean
+  label: source
 - type: text
   name: source_url
   label: Source URL
   description: The URL to the source code.
+  hidden: false
+  showOnly:
+    field: source
+    value: true
+- name: release
+  type: boolean
+  label: Release
 - type: text
   name: release_url
   label: Release URL
   description: The URL to the released version.
+  showOnly:
+    field: release
+    value: true
 - name: internal
   type: boolean
   label: Internal
