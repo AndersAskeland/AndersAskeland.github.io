@@ -45,7 +45,6 @@ fields:
   name: description
   label: description
 pages:
-- src/pages/test.njk
 - src/projects/p-file-repair.md
 - src/projects/r-murder-mystery.md
 - src/projects/webpage.md
