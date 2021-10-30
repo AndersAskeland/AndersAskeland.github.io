@@ -1,0 +1,18 @@
+{
+    "title": "Anders Askeland",
+    "url": "http://www.askeland.me",
+    "language": "en",
+    "description": "Personal webpage.",
+    "r-murder-mystery": {
+        "name": "R Murder Mystery",
+        "description": "The R Murder Mystery is designed to be both a lesson to learn R concepts and commands and a fun game for R users to solve an intriguing crime.",
+        "source-code": "https://github.com/AndersAskeland/R-murder-mystery",
+        "url": "http://askeland.me/R-murder-mystery/"
+    },
+    "p-file-repair": {
+        "name": "P file repair",
+        "description": "A simple tool to repair certain GE p-files that are corrupted. This is specifically a problem for certain v. 28 p-files. These files always contains 10058420 bytes and contains a lot of unused 0 values. The following software removes these values and rewrites the file.",
+        "source-code": "https://github.com/AndersAskeland/P-File-repair",
+        "url": "https://github.com/AndersAskeland/P-File-repair/releases/tag/v1.0.1"
+    }
+}
