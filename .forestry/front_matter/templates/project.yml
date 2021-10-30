@@ -20,9 +20,6 @@ fields:
     required: false
   label: Internal URL
   description: Internal URL
-- type: text
-  name: status
-  label: status
 - name: internal
   type: boolean
   label: Internal
