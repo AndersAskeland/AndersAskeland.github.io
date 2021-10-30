@@ -14,16 +14,26 @@ fields:
   name: release_url
   label: Release URL
   description: The URL to the released version.
-- name: internal_url
-  type: text
-  config:
-    required: false
-  label: Internal URL
-  description: Internal URL
 - name: internal
   type: boolean
   label: Internal
   description: Whether or not the site is internal
+- name: internal_url
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: pages
+      file: 
+      path: 
+  label: Internal URL
+  hidden: false
+  showOnly:
+    field: internal
+    value: true
 - name: image
   type: file
   config:
