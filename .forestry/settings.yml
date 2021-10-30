@@ -13,7 +13,7 @@ sections:
   path: src/pages
   label: Pages
   create: all
-  match: "*.njk"
+  match: "*.html"
   new_doc_ext: njk
 upload_dir: src/images
 public_path: "/images"
