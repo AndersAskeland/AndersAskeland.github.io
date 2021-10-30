@@ -11,3 +11,5 @@ fields:
   type: tag_list
   default: []
   label: tags
+pages:
+- src/pages/test2.njk
