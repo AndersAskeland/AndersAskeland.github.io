@@ -8,7 +8,8 @@ sections:
   path: src/pages
   label: Pages
   create: all
-  match: "**/*"
+  match: "*.njk"
+  new_doc_ext: ".njk"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
