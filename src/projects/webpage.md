@@ -8,5 +8,7 @@ image: "/images/300.jpeg"
 description: Different itterations of this webpage.
 source: false
 release: false
+test:
+- src/posts/first_post.md
 
 ---
