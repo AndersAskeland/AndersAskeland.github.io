@@ -1,11 +1,9 @@
 ---
 title: Webpages
-where: Internal
-source: ''
-url: ''
+source_url: ''
+release_url: ''
+internal_url: ''
 internal: true
-description: Different itterations of this webpage.
 image: "/src/images/portrait.jpg"
-status: ''
-
+description: Different itterations of this webpage.
 ---
