@@ -4,6 +4,19 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Settings
+- type: document
+  path: src/_data/metadata.json
+  label: Metadata
+  match: "**/*"
+- type: heading
+  label: Content
+- type: directory
+  path: src/posts
+  label: Posts
+  create: all
+  match: "**/*"
 - type: directory
   path: src/projects
   label: Projects
