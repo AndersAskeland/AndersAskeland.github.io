@@ -39,7 +39,7 @@ fields:
     options: []
     source:
       type: pages
-      section: pages
+      section: posts
       file: 
       path: 
   label: Internal URL
