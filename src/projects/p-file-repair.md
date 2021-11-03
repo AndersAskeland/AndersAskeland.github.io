@@ -6,7 +6,7 @@ internal_url: ''
 internal: false
 description: A simple tool to repair certain GE p-files that are corrupted. This is
   specifically a problem for certain v. 28 p-files.
-image: "/images/300.jpeg"
+image: "src/images/300.jpeg"
 source: true
 release: true
 
