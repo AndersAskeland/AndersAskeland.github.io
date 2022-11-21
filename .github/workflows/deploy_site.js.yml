@@ -41,4 +41,3 @@ jobs:
         clean: true
         clean-exclude: |
           .forestry
-          CNAME
