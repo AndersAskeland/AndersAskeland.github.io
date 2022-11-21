@@ -1,0 +1,651 @@
+<!doctype html>
+<html class="">
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Anders Askeland</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body class="">
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Anders Askeland 
+					</h1>
+					<h2>
+						PhD fellow at Aalborg Universitetshospital
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">anders.askeland@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">81750357</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="www.askeland.me">www.askeland.me</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>PhD fellow working within the field of metabolism, diabetes, obesity, and fatty liver disease.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/a-askeland/">a-askeland</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Aalborg University</span>
+					<span class="date">
+						2020-01-31 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.linkedin.com/school/aalborg-universitet/">https://www.linkedin.com/school/aalborg-universitet/</a>
+				</div>
+				<div class="position">
+					PhD fellow
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Aalborg Universitetshospital</span>
+					<span class="date">
+						2017-08-31 — 2019-12-31
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.linkedin.com/company/aalborg-universitetshospital/">https://www.linkedin.com/company/aalborg-universitetshospital/</a>
+				</div>
+				<div class="position">
+					Research Assistant
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Aalborg Universitetshospital</span>
+					<span class="date">
+						2016-08-31 — 2017-07-31
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.linkedin.com/company/aalborg-universitetshospital/">https://www.linkedin.com/company/aalborg-universitetshospital/</a>
+				</div>
+				<div class="position">
+					Student Research Assistant
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>VBM Laboratoriet A/S</span>
+					<span class="date">
+						2016-03-31 — 2017-01-31
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.linkedin.com/company/eurofinsmiljoe/">https://www.linkedin.com/company/eurofinsmiljoe/</a>
+				</div>
+				<div class="position">
+					Laboratory Assistant
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>UDECO (Underwater Design and Equipment Company)</span>
+					<span class="date">
+						2012-01-31 — 2015-07-31
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					Seasonal Employee
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Fresch Thinking</span>
+					<span class="date">
+						2011-09-30 — 2012-07-31
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.linkedin.com/company/fresch-thinking/">https://www.linkedin.com/company/fresch-thinking/</a>
+				</div>
+				<div class="position">
+					Sales Promoter
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>International Medical Cooperation Committee - IMCC</span>
+					<span class="date">
+						2012-10-31 — 2015-07-31
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.linkedin.com/company/international-medical-cooperation-committee---imcc/">https://www.linkedin.com/company/international-medical-cooperation-committee---imcc/</a>
+				</div>
+				<div class="position">
+					Volunteer within the Research Exchange group
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Aalborg University (M.Sc.)</span>
+					<span class="date">
+						2015-12-31 — 2017-12-31
+					</span>
+				</h4>
+				<div class="area">
+					Biomedicine
+				</div>
+				<div class="studyType">
+					Master of Science (M.Sc.) in Medicine with industrial specialization
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>5 ECTS - Immuno- and Molecular Therapy</li>
+					<li>5 ECTS - Molecular Pathogenesis</li>
+					<li>5 ECTS - Genomics, Proteomics and Bioinformatics in Disease and Diagnostics</li>
+					<li>5 ECTS - Molecular and Cellular Methods in Biomedicine</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Aalborg University (B.Sc.)</span>
+					<span class="date">
+						2012-12-31 — 2015-12-31
+					</span>
+				</h4>
+				<div class="area">
+					Medicine
+				</div>
+				<div class="studyType">
+					Bachelor of Science (B.Sc.) in Medicine with industrial specialization
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>10 ECTS - Musculoskeletal and Nervous System II</li>
+					<li>8 ECTS - Medical Microbiology</li>
+					<li>4 ECTS - General Pharmacology</li>
+					<li>8 ECTS - General Pathology</li>
+					<li>12 ECTS - Musculoskeletal and Nervous System I</li>
+					<li>7 ECTS - Biomedicine and Drug Development</li>
+					<li>2 ECTS - First aid</li>
+					<li>15 ECTS - B.Sc. Project</li>
+					<li>5 ECTS - Pharmacology in a Pre-clinical and Economic Perspective</li>
+					<li>8 ECTS - Hematology and Immunology</li>
+					<li>2 ECTS - Introduction to Communication and Cooperation</li>
+					<li>8 ECTS - Nuitrition and the Digestive System I</li>
+					<li>6 ECTS - Clinical Psychology</li>
+					<li>12 ECTS - Introduction to Medicine and Biology</li>
+					<li>4 ECTS - Endocrinology of the Reproductive System</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Effect of short abstinence time on sperm motility parameters</span>
+					<br>
+					<span class="date">
+						2015-09-27
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://vbn.aau.dk/da/publications/effect-of-short-abstinence-time-on-sperm-motility-parameters(3d264fb7-8600-4157-9c82-89eaf1016497).html"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>Final programme, 18th World Congress of In Vitro Ferilization, ISIVF 2015, 27-30 September 2015, Copenhagen, Denmark</strong>
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Public speaking</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>R</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Python (Programming Language)</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Research</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Data analysis</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Scientific Writing</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Clinical Research</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Clinical Trials</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Medicine</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>SPSS</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>C</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>LaTeX</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>R (Programming Language)</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>SQL</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Git</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Adobe InDesign</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Adobe Illustrator</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Critical thinking</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Perseus - Bioinformatics tool</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>FunRich - Functional Enrichement Tool</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Molecular Biology</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>SQLAlchemy</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>python</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Qt</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Project Management</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>PySide</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Project Planning</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>HTML</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>PyQt</h4>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>da</strong>
+				</div>
+				<div class="fluency">
+					Native Speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	</div>
+	
+	</body>
+</html>

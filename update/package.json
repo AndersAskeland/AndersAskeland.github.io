@@ -1,0 +1,24 @@
+{
+  "name": "Personal website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "(npx eleventy --input=src --watch) & npx vite _site",
+    "build": "ELEVENTY_PRODUCTION=true eleventy --input=src && NODE_ENV=production npx tailwindcss -i src/css/tailwind.css -c tailwind.config.js -o _site/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "tailwindcss-intersect": "^1.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "vite": "^2.9.9"
+  }
+}
