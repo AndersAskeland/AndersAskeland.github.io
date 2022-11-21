@@ -1,64 +1,87 @@
 /* Constants */
-const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 
-/* Image package */
-/* async function imageShortcode(src, alt, style) {
-    if (alt === undefined) {
-        // You bet we throw an error on missing alt (alt="" works okay)
-        throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-    }
+async function imageShortcode(src, alt, classes) {
+    /* Set format - Macos does not support avif */
+    let format = ["avif", "webp", "jpeg"];
 
+    /* Write metadata */
     let metadata = await Image(src, {
         widths: [300, 600],
-        formats: ["avif", "jpeg"],
+        formats: format,
         urlPath: "/images/",
-        outputDir: "dist/images/",
+        outputDir: "_site/images/",
     });
 
-    let data = metadata.jpeg[metadata.jpeg.length - 1];
-    return `<img src="${data.url}" class="${style}" alt="${alt}" loading="lazy" decoding="async">`;
-} */
-
-async function imageShortcode(src, alt, style, sizes) {
-    let metadata = await Image(src, {
-        widths: [300, 600],
-        formats: ["avif", "jpeg"],
-        urlPath: "/images/",
-        outputDir: "dist/images/",
-    });
-  
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-      class: style,
+    /* Set image attributes */
+    let image_attributes = {
+        sizes: "(min-width: 10em) 20vw, 10vw",
+        alt,
+        loading: "lazy",
+        decoding: "async",
+        class: classes,
     };
-  
-    // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-    return Image.generateHTML(metadata, imageAttributes);
-  }
+
+    // Return
+    return Image.generateHTML(metadata, image_attributes);
+}
+
+async function image_image(src, alt, classes) {
+    /* Set format - Macos does not support avif */
+    let format = ["avif", "webp", "jpeg"];
+
+    /* Add src */
+    var src_new = ""
+    var src_new = src_new.concat("src", src)
+
+    /* Write metadata */
+    let metadata = await Image(src_new, {
+        widths: [300, 600],
+        formats: format,
+        urlPath: "/images/",
+        outputDir: "_site/images/",
+    });
+
+    /* Set image attributes */
+    let image_attributes = {
+        sizes: "(min-width: 10em) 20vw, 10vw",
+        alt,
+        loading: "lazy",
+        decoding: "async",
+        class: classes,
+    };
+
+    // Return
+    return Image.generateHTML(metadata, image_attributes);
+}
+
 
 /* Config settings */
 module.exports = function (eleventyConfig) {
-    /* Eleventy will pick up content at build (_tmp is for dev) */
+    /*--------- General --------*/
+    // Plugins
+
+    // Pass trough files (You dont need to write entire path)
     eleventyConfig.addPassthroughCopy({ "./src/css/tailwind.css": "./style.css" });
-    eleventyConfig.addPassthroughCopy({ "./src/_tmp/style.css": "./style.css" });
-    /*     eleventyConfig.addPassthroughCopy({ "./src/images": "./images/" });
-     */
-    /* Will watch for changes during dev */
+    eleventyConfig.addPassthroughCopy({ "./src/images": "./images/" });
+
+    // Will watch for changes during dev
     eleventyConfig.addWatchTarget("./src");
-    eleventyConfig.addWatchTarget("./dist");
 
-    /* Image plugin */
+    /*--------- Collections --------*/
+
+    /*--------- Filters --------*/
+
+    /*--------- Shortcodes --------*/
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+    eleventyConfig.addNunjucksAsyncShortcode("image2", image_image);
 
-    /* Set input and output directories */
+    /*--------- Settings --------*/
     return {
         dir: {
             input: "src",
-            output: "dist",
+            output: "_site",
         },
+        htmlTemplateEngine: "njk",
     };
 };

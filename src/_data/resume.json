@@ -1,12 +1,13 @@
 {
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "basics": {
       "name": "Anders Askeland",
       "label": "PhD fellow at Aalborg Universitetshospital",
-      "picture": "",
-      "email": "anders.askeland@gmail.com",
-      "phone": "81750357",
-      "website": "www.askeland.me",
-      "summary": "PhD fellow working within the field of metabolism, diabetes, obesity, and fatty liver disease.",
+      "image": "",
+      "email": "anders_askeland@hotmail.com",
+      "phone": "004581750357",
+      "url": "",
+      "summary": "PhD fellow working within the field of extracellular vesicles, metabolism, diabetes, obesity, and fatty liver disease. Am particularly interested in aspect related to data science, R programming, and artificial intelligence.",
       "location": {
         "countryCode": "DK",
         "address": ""
@@ -14,70 +15,85 @@
       "profiles": [
         {
           "network": "LinkedIn",
-          "username": "a-askeland",
-          "url": "https://www.linkedin.com/in/a-askeland/"
+          "username": "ACoAABrDc-kBqKXbM0bvvROeOFKKzgnUUmt4IPw",
+          "url": "https://www.linkedin.com/in/ACoAABrDc-kBqKXbM0bvvROeOFKKzgnUUmt4IPw/"
         }
       ]
     },
     "work": [
       {
-        "company": "Aalborg University",
-        "endDate": "",
-        "highlights": [],
+        "name": "Aalborg University",
         "position": "PhD fellow",
         "startDate": "2020-01-31",
-        "website": "https://www.linkedin.com/school/aalborg-universitet/"
+        "endDate": "",
+        "highlights": [],
+        "url": "https://www.linkedin.com/school/aalborg-universitet/",
+        "location": "Aalborg, Denmark"
       },
       {
-        "company": "Aalborg Universitetshospital",
-        "endDate": "2019-12-31",
+        "position": "R teaching",
+        "startDate": "2021-10-31",
+        "endDate": "",
         "highlights": [],
+        "summary": "Involved in teaching/lecturing R programming for PhD courses (Hosted by Danish Diabetes Academy (DDA)). Have been involved in teaching the following courses:\n\n* Intermediate course on reproducible research in R - In 2021 & 2022\n* Introductory course on reproducible research in R - In 2022",
+        "url": "",
+        "location": "Denmark"
+      },
+      {
+        "name": "Aalborg Universitetshospital",
         "position": "Research Assistant",
         "startDate": "2017-08-31",
-        "website": "https://www.linkedin.com/company/aalborg-universitetshospital/"
+        "endDate": "2019-12-31",
+        "highlights": [],
+        "url": "https://www.linkedin.com/company/aalborg-universitetshospital/",
+        "location": "Aalborg, North Jutland, Denmark"
       },
       {
-        "company": "Aalborg Universitetshospital",
-        "endDate": "2017-07-31",
-        "highlights": [],
+        "name": "Aalborg Universitetshospital",
         "position": "Student Research Assistant",
         "startDate": "2016-08-31",
-        "website": "https://www.linkedin.com/company/aalborg-universitetshospital/"
+        "endDate": "2017-07-31",
+        "highlights": [],
+        "url": "https://www.linkedin.com/company/aalborg-universitetshospital/",
+        "location": "Aalborg, North Jutland, Denmark"
       },
       {
-        "company": "VBM Laboratoriet A/S",
-        "endDate": "2017-01-31",
-        "highlights": [],
+        "name": "VBM Laboratoriet A/S",
         "position": "Laboratory Assistant",
         "startDate": "2016-03-31",
-        "website": "https://www.linkedin.com/company/eurofinsmiljoe/"
+        "endDate": "2017-01-31",
+        "highlights": [],
+        "url": "https://www.linkedin.com/company/eurofinsmiljoe/",
+        "location": "Aalborg Area, Denmark"
       },
       {
-        "company": "UDECO (Underwater Design and Equipment Company)",
-        "endDate": "2015-07-31",
-        "highlights": [],
+        "name": "UDECO (Underwater Design and Equipment Company)",
         "position": "Seasonal Employee",
         "startDate": "2012-01-31",
-        "website": ""
+        "endDate": "2015-07-31",
+        "highlights": [],
+        "url": "",
+        "location": "Stavanger Area, Norway"
       },
       {
-        "company": "Fresch Thinking",
-        "endDate": "2012-07-31",
-        "highlights": [],
+        "name": "Fresch Thinking",
         "position": "Sales Promoter",
         "startDate": "2011-09-30",
-        "website": "https://www.linkedin.com/company/fresch-thinking/"
+        "endDate": "2012-07-31",
+        "highlights": [],
+        "url": "https://www.linkedin.com/company/fresch-thinking/",
+        "location": "Stavanger Area, Norway"
       }
     ],
     "volunteer": [
       {
         "organization": "International Medical Cooperation Committee - IMCC",
         "position": "Volunteer within the Research Exchange group",
-        "website": "https://www.linkedin.com/company/international-medical-cooperation-committee---imcc/",
         "startDate": "2012-10-31",
         "endDate": "2015-07-31",
         "summary": null,
-        "highlights": []
+        "highlights": [],
+        "url": "https://www.linkedin.com/company/international-medical-cooperation-committee---imcc/"
       }
     ],
     "education": [
@@ -87,7 +103,7 @@
         "studyType": "Master of Science (M.Sc.) in Medicine with industrial specialization",
         "startDate": "2015-12-31",
         "endDate": "2017-12-31",
-        "gpa": "",
+        "score": "",
         "courses": [
           "5 ECTS - Immuno- and Molecular Therapy",
           "5 ECTS - Molecular Pathogenesis",
@@ -101,7 +117,7 @@
         "studyType": "Bachelor of Science (B.Sc.) in Medicine with industrial specialization",
         "startDate": "2012-12-31",
         "endDate": "2015-12-31",
-        "gpa": "",
+        "score": "",
         "courses": [
           "10 ECTS - Musculoskeletal and Nervous System II",
           "8 ECTS - Medical Microbiology",
@@ -121,17 +137,48 @@
         ]
       }
     ],
-    "awards": [],
+    "awards": [
+      {
+        "title": "Grant",
+        "date": "2019-06-30",
+        "awarder": "Danish Diabetes Academy",
+        "summary": "Granted a 1.1 million DKK PhD fellowship"
+      },
+      {
+        "title": "Grant",
+        "date": "2017-12-31",
+        "awarder": "Ebba og Aksel Schølin's Fond",
+        "summary": "Granted 45.000DKK to investigate factors associated with small cell lung cancer and chemotherapy resistance."
+      },
+      {
+        "title": "Grant",
+        "date": "2017-12-31",
+        "awarder": "Anita og Tage Therkelsens Fond",
+        "summary": "Granted 50.000 DKK to investigate factors associated with small cell lung cancer and chemotherapy resistance."
+      },
+      {
+        "title": "Grant",
+        "date": "2017-12-31",
+        "awarder": "Region Nordjylland",
+        "summary": "Granted 80.000 DKK salary to prepare a PhD project."
+      }
+    ],
+    "certificates": [],
     "publications": [
       {
         "name": "Effect of short abstinence time on sperm motility parameters",
         "publisher": "Final programme, 18th World Congress of In Vitro Ferilization, ISIVF 2015, 27-30 September 2015, Copenhagen, Denmark",
         "releaseDate": "2015-09-27",
-        "website": "http://vbn.aau.dk/da/publications/effect-of-short-abstinence-time-on-sperm-motility-parameters(3d264fb7-8600-4157-9c82-89eaf1016497).html",
-        "summary": ""
+        "summary": "",
+        "url": "http://vbn.aau.dk/da/publications/effect-of-short-abstinence-time-on-sperm-motility-parameters(3d264fb7-8600-4157-9c82-89eaf1016497).html"
       }
     ],
     "skills": [
+      {
+        "name": "Public Speaking",
+        "level": "",
+        "keywords": []
+      },
       {
         "name": "Public speaking",
         "level": "",
@@ -228,11 +275,6 @@
         "keywords": []
       },
       {
-        "name": "FunRich - Functional Enrichement Tool",
-        "level": "",
-        "keywords": []
-      },
-      {
         "name": "Molecular Biology",
         "level": "",
         "keywords": []
@@ -276,14 +318,43 @@
         "name": "PyQt",
         "level": "",
         "keywords": []
+      },
+      {
+        "name": "FunRich - Functional Enrichement Tool",
+        "level": "",
+        "keywords": []
       }
     ],
     "languages": [
       {
         "language": "da",
         "fluency": "Native Speaker"
+      },
+      {
+        "fluency": "Native Speaker",
+        "language": "Bokmål, Norsk"
+      },
+      {
+        "fluency": "Full Professional",
+        "language": "Dansk"
+      },
+      {
+        "fluency": "Full Professional",
+        "language": "Engelsk"
       }
     ],
     "interests": [],
-    "references": []
+    "references": [],
+    "projects": [
+      {
+        "name": "Transfer learning for ECG age prediction",
+        "startDate": "",
+        "summary": "Use of transfer learning to predict age based on electocardiogram (ECG). Project was conducted as part of the DDA and DDSA data science challange.",
+        "url": "https://github.com/ddECG"
+      }
+    ],
+    "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
   }
